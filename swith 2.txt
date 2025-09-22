@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+int main () {
+    int N,a,b,res;
+    cout<<"menu\n";
+    cout<<"1: suma\n";
+    cout<<"2: resta\n";
+    cout<<"3: multiplicacion\n";
+    cout<<"4: disivision\n";
+    cout<<"5: salir\n";
+cin>>N>>a>>b;
+    switch (N){
+    case 1: cout<< "SUMA=";
+    res=a+b;
+    cout<<res;
+    break;
+    case 2: cout<<"RESTA=";
+    res=a-b;
+    cout<<res;
+    break;
+    case 3: cout<<"MULTIPLICACON";
+    res=a*b;
+    cout<<res;
+     break;
+    case 4: cout<<"DIVISION=";
+     res=a/b;
+    cout<<res;
+    break;
+case 5:cout<<"NOS VEMOS PRONTO";
+break;
+    default: cout<<"error";
+    }
+
+return 0;
+}

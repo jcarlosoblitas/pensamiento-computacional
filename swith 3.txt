@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+int main () {
+    int N,lado,altura,base,res;
+    cout<<"menu\n";
+    cout<<"1: cuadrado\n";
+    cout<<"2: rectangualo\n";
+    cout<<"3: triangulo\n";
+    cout<<"4: salir\n";
+cin>>N;
+    switch (N){
+    case 1: cout<<"el area del cuadrado es : ";
+    cin>>lado;
+    res=lado*lado;
+    cout<<res;
+
+    break;
+    case 2:cout<< "el area del rectangulo es: ";
+    cin>>base>>altura;
+    res=base*altura;
+cout<<res;
+    break;
+    case 3:cout<< "el area de triangulo es: ";
+    cin>>base>>altura;
+    res=(base*altura)/2;
+cout<<res;
+     break;
+    case 4:cout<<"NOS VEMOS PRONTO";
+break;
+
+
+    default: cout<<"error";
+    }
+
+return 0;
+}

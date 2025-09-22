@@ -1,0 +1,61 @@
+#include<iostream>
+using namespace std;
+int main () {
+    int N,a;
+    float res;
+
+
+    cout<<"menu\n";
+    cout<<"12: AMERICA DEL NORTE\n";
+    cout<<"15: AMERICA CENTRAL\n";
+    cout<<"18: AMERICA DEL SUR\n";
+    cout<<"19: EUROPA\n";
+    cout<<"23: ASIA\n";
+    cout<<"25: AFRICA\n";
+    cout<<"29: OCEANIA\n";
+
+cin>>N;
+    switch (N){
+    case 12:
+        cin>>a;
+        res=2*a;
+    cout<<res;
+    break;
+    case 15:
+        cin>>a;
+        res=2.2*a;
+        cout.precision(2);
+    cout<<res;
+    break;
+    case 18:
+        cin>>a;
+        res=4.5*a;
+    cout<<res;
+    break;
+    case 19:
+        cin>>a;
+        res=3.5*a;
+    cout<<res;
+    break;
+    case 23:
+        cin>>a;
+        res=6*a;
+    cout<<res;
+    break;
+    case 25:
+        cin>>a;
+        res=6*a;
+    cout<<res;
+    break;
+    case 29:
+        cin>>a;
+        res=5*a;
+    cout<<res;
+    break;
+
+
+    default: cout<<"ingrese los codigos del menu";
+    }
+
+return 0;
+}
