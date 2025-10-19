@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main ()
+{
+int n,par=0,imp=0,d;
+cin>>n;
+while(n>0)
+{
+if(n%2==0)
+{
+d=n-(n/10)*10;
+par++;
+}
+else
+{
+impare++;
+}
+n=n/10;
+}
+
+cout<<"pares"<<par<<endl;
+cout<<"impar"<<imp<<endl;
+return 0;
+}
