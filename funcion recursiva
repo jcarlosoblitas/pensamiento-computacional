@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int s(int num1)
+{
+   if(num1==1)
+   {
+       return 1;
+   }else
+    {
+        return num1 + s(num1-1);
+    }
+}
+int main ()
+{
+cout<<s(5)<<endl;
+    return 0;
+}
