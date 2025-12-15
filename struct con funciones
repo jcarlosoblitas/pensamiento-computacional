@@ -1,0 +1,33 @@
+#include <iostream>
+#include<cstring>
+using namespace std;
+
+
+struct libro{
+    int codigo;
+    string autor;
+    string nombre;
+    string editorial;
+    int publicacion;
+};
+void salida_de_libros(libro infos)
+{
+    cout<<"codigo del libro: "<<infos.codigo<<endl;
+    cout<<"autor: "<<infos.autor<<endl;
+    cout<<"nombre: "<<infos.nombre<<endl;
+    cout<<"editorial: "<<infos.editorial<<endl;
+    cout<<"publicacion: "<<infos.publicacion<<endl;
+}
+int main ()
+{
+    libro info;
+    cout<<"ingrese datos"<<endl;
+    cin>>info.codigo;
+    cin>>info.autor;
+    cin>>info.nombre;
+    cin>>info.editorial;
+    cin>>info.publicacion;
+    
+    salida_de_libros(info);
+    return 0;
+}
