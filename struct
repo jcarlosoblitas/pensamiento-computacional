@@ -1,0 +1,28 @@
+#include <iostream>
+#include<cstring>
+using namespace std;
+
+
+struct libro{
+    int codigo;
+    string autor;
+    string nombre;
+    string editorial;
+    int publicacion;
+};
+int main ()
+{
+    libro info;
+    info.codigo=200307;
+    info.autor="vargas llosa";
+    info.nombre="la ciudad y los perros";
+    info.editorial="universal";
+    info.publicacion=1960;
+    
+    cout<<"codigo del libro: "<<info.codigo<<endl;
+    cout<<"autor: "<<info.autor<<endl;
+    cout<<"nombre: "<<info.nombre<<endl;
+    cout<<"editorial: "<<info.editorial<<endl;
+    cout<<"publicacion: "<<info.publicacion<<endl;
+    return 0;
+}
