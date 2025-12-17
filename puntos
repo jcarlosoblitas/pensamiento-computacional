@@ -1,0 +1,17 @@
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a=5, b=3,c=0  ,*P,*Z;
+   
+    c=a+b;
+    cout<<c<<endl;
+    cout<<&c<<endl;
+    P=&c+5;
+    
+    *P=8+5;
+    
+    cout<<*P;
+    
+    return 0;
+}
